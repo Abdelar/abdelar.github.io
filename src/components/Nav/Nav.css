@@ -1,0 +1,30 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(61, 61, 61);
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	margin-left: -50vw;
+	padding: 0 5vw;
+}
+
+.nav ul {
+	display: none;
+}
+
+.logo {
+	background-image: url(../../assets/logo.svg);
+	background-size: contain;
+	width: 4em;
+	height: 4em;
+}
+
+.logo span {
+	display: none;
+}
+
+.nav-toggle {
+	margin-top: 0;
+}
