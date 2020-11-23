@@ -1,7 +1,12 @@
+import Nav from '../Nav/Nav';
 import './Main.css';
 
-function Main() {
-	return <div>Main</div>;
+export default function Main() {
+	return (
+		<>
+			<header>
+				<Nav />
+			</header>
+		</>
+	);
 }
-
-export default Main;
