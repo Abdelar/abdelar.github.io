@@ -1,5 +1,15 @@
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+	faFolderOpen,
+	faLaptopCode,
+	faUser,
+	faEnvelope,
+} from '@fortawesome/free-solid-svg-icons';
+
 import Nav from '../Nav/Nav';
 import './Main.css';
+
+library.add(faLaptopCode, faUser, faFolderOpen, faEnvelope);
 
 export default function Main() {
 	return (

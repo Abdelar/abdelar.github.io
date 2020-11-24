@@ -210,4 +210,8 @@
 		font-weight: 200;
 		letter-spacing: 0.2em;
 	}
+
+	.link-icon {
+		display: none;
+	}
 }
