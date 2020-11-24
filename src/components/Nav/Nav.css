@@ -3,10 +3,8 @@
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(61, 61, 61);
-	width: 100vw;
-	position: relative;
-	left: 50%;
-	margin-left: -50vw;
+	width: 100%;
+	position: fixed;
 	padding: 0 5vw;
 	transition: border-bottom-left-radius 0.3s, height 0.3s ease;
 	height: 4em;
@@ -14,12 +12,8 @@
 	box-shadow: 0 3px 10px var(--shadow-clr);
 }
 
-.nav::before {
-	content: '';
-}
-
 .open {
-	height: 70vh;
+	height: 70%;
 	border-bottom-left-radius: 5em;
 	background-color: var(--yellow);
 }
@@ -32,7 +26,7 @@
 	flex-flow: column;
 	margin-top: 0;
 	list-style: none;
-	transform: translateY(-200%);
+	transform: translateY(-70vh);
 	opacity: 0;
 	transition: transform 0.3s ease, opacity 0.3s ease;
 	height: 50%;
