@@ -79,9 +79,9 @@
 .nav-toggle span::after {
 	display: inline-block;
 	background-color: var(--light01);
-	height: 0.2em;
+	height: 3px;
 	width: 100%;
-	border-radius: 1em;
+	border-radius: 1.5px;
 	transition: transform 0.3s ease, top 0.3s ease, width 0.3s ease,
 		opacity 0.3s ease;
 }
@@ -127,6 +127,8 @@
 
 .nav li a {
 	position: relative;
+	font-weight: bold;
+	font-family: 'Roboto Mono', monospace;
 }
 
 .nav li a::after {
