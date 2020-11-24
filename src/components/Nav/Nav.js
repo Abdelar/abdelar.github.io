@@ -20,23 +20,23 @@ export default function Nav() {
 			</div>
 			<ul className='nav-links'>
 				<li>
-					<a title='Services' href='#services'>
-						Services
+					<a title='About' href='#about'>
+						About
 					</a>
 				</li>
 				<li>
-					<a title='Services' href='#services'>
-						Services
+					<a title='Work' href='#work'>
+						Work
 					</a>
 				</li>
 				<li>
-					<a title='Services' href='#services'>
-						Services
+					<a title='Skills' href='#skills'>
+						Skills
 					</a>
 				</li>
 				<li>
-					<a title='Services' href='#services'>
-						Services
+					<a title='Contact' href='#contact'>
+						Contact
 					</a>
 				</li>
 			</ul>
