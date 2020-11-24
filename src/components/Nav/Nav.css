@@ -11,7 +11,7 @@
 	transition: border-bottom-left-radius 0.3s, height 0.3s ease;
 	height: 4em;
 	border-bottom-left-radius: 0;
-	box-shadow: 0 2px 6px var(--shadow-clr);
+	box-shadow: 0 3px 10px var(--shadow-clr);
 }
 
 .nav::before {
@@ -133,6 +133,7 @@
 .nav li:nth-child(1) {
 	transition-delay: 0.4s;
 }
+
 .nav li:nth-child(2) {
 	transition-delay: 0.3s;
 }
