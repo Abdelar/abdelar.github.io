@@ -1,6 +1,6 @@
 .nav {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	background-color: rgb(61, 61, 61);
 	width: 100vw;
@@ -8,17 +8,50 @@
 	left: 50%;
 	margin-left: -50vw;
 	padding: 0 5vw;
+	transition: border-bottom-left-radius 0.3s, height 0.3s ease;
+	height: 4em;
+	border-bottom-left-radius: 0;
 }
 
+.nav::before {
+	content: '';
+}
+
+.open {
+	height: 70vh;
+	border-bottom-left-radius: 5em;
+	background-color: var(--yellow);
+}
+
+.open .logo {
+	background-image: url(../../assets/logo-inverted.svg);
+}
 .nav ul {
-	display: none;
+	display: flex;
+	flex-flow: column;
+	margin-top: 0;
+	list-style: none;
+	transform: translateY(-200%);
+	opacity: 0;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	height: 50%;
+	justify-content: space-between;
 }
 
 .logo {
+	position: absolute;
+	left: 5vw;
+	top: 1em;
 	background-image: url(../../assets/logo.svg);
 	background-size: contain;
-	width: 4em;
-	height: 4em;
+	width: 2em;
+	height: 2em;
+	transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover,
+.logo:focus {
+	transform: scale(1.2);
 }
 
 .logo span {
@@ -27,4 +60,90 @@
 
 .nav-toggle {
 	margin-top: 0;
+	position: absolute;
+	right: 5vw;
+	top: 1em;
+	height: 2em;
+	width: 2em;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.nav-toggle span {
+	position: relative;
+}
+
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+	display: inline-block;
+	background-color: var(--light01);
+	height: 0.2em;
+	width: 100%;
+	border-radius: 1em;
+	transition: transform 0.3s ease, top 0.3s ease, width 0.3s ease,
+		opacity 0.3s ease;
+}
+
+.nav-toggle span::before,
+.nav-toggle span::after {
+	content: '';
+	position: absolute;
+}
+
+.nav-toggle span::before {
+	top: -0.5em;
+}
+.nav-toggle span::after {
+	top: 0.5em;
+	width: 1.2em;
+	right: 0;
+	opacity: 1;
+}
+
+.X span::before {
+	transform: rotateZ(-90deg);
+	top: 0;
+}
+
+.X span::after {
+	opacity: 0;
+}
+
+.X span {
+	transform: rotateZ(45deg);
+	top: 0;
+}
+
+.X + ul {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.nav li {
+	font-size: 1.2rem;
+}
+
+.nav li a {
+	position: relative;
+}
+
+.nav li a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 0.2em;
+	border-radius: 0.1em;
+	background-color: var(--light01);
+	bottom: -0.2em;
+	left: 0;
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+	transform-origin: right;
+}
+.nav li a:hover::after,
+.nav li a:focus::after {
+	transform: scaleX(1);
+	transform-origin: left;
 }
