@@ -211,6 +211,10 @@
 		letter-spacing: 0.2em;
 	}
 
+	.nav li a::after {
+		background-color: var(--yellow);
+	}
+
 	.link-icon {
 		display: none;
 	}
