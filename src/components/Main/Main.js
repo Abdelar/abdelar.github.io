@@ -23,6 +23,6 @@ export default function Main() {
 				Similique enim reiciendis voluptate quia officiis hic pariatur
 				accusantium recusandae exercitationem!
 			</main>
-		</>
+		</>	
 	);
 }
