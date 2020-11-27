@@ -18,6 +18,11 @@
 	--shadow-clr: #00000032;
 }
 
+::selection {
+	color: var(--dark02);
+	background-color: var(--yellow);
+}
+
 *,
 *::before,
 *::after {
@@ -43,7 +48,7 @@ a {
 
 section {
 	display: flex;
-	width: 90vw;
+	width: 90%;
 	flex-direction: column;
 	justify-content: center;
 	min-height: 100vh;
