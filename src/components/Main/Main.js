@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import Nav from '../Nav/Nav';
+import Intro from '../Intro/Intro';
 import './Main.css';
 
 library.add(faLaptopCode, faUser, faFolderOpen, faEnvelope);
@@ -17,12 +18,14 @@ export default function Main() {
 			<header>
 				<Nav />
 			</header>
-			<main className='test'>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt deleniti
-				consequuntur iusto, doloribus non animi eum odit numquam nulla?
-				Similique enim reiciendis voluptate quia officiis hic pariatur
-				accusantium recusandae exercitationem!
+			<main>
+				<div className='intro-bg'>
+					<section id='intro'>
+						<Intro />
+					</section>
+				</div>
+				<section className='about'>about</section>
 			</main>
-		</>	
+		</>
 	);
 }

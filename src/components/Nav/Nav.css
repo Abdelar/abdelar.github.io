@@ -24,7 +24,6 @@
 .nav ul {
 	display: flex;
 	flex-direction: column;
-	margin-top: 0;
 	list-style: none;
 	transform: translateY(-70vh);
 	opacity: 0;
@@ -54,7 +53,6 @@
 }
 
 .nav-toggle {
-	margin-top: 0;
 	position: absolute;
 	right: 5vw;
 	top: 1em;
@@ -190,7 +188,6 @@
 		transform: none;
 		transition: none;
 		opacity: 1;
-		margin-top: 0;
 		margin-left: 2em;
 		text-transform: uppercase;
 	}

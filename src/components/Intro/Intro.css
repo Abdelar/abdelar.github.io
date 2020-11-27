@@ -1,0 +1,63 @@
+.intro-bg {
+	background-image: url(../../assets/intro-bg.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#intro {
+	max-width: 700px;
+}
+.introduction-illustration {
+	display: none;
+}
+.greeting {
+	font-size: 2rem;
+	line-height: 1.2em;
+	letter-spacing: 0.05em;
+}
+.greeting span {
+	display: block;
+	justify-self: start;
+	font-family: 'Roboto Mono', sans-serif;
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+.brief-introduction {
+	margin: 0.8em 0 1.5em;
+	letter-spacing: 0.05em;
+}
+
+.detailed-introduction {
+	margin: 0;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+}
+
+@media (min-width: 700px) {
+	#intro {
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	.intro-bg {
+		background-image: none;
+	}
+
+	#intro {
+		max-width: 90vw;
+		flex-direction: row;
+		align-items: center;
+		font-size: 1.4rem;
+	}
+
+	.introduction-illustration {
+		display: block;
+		width: 50%;
+		margin-left: auto;
+		height: 500px;
+		object-fit: cover;
+		object-position: left top;
+	}
+}
