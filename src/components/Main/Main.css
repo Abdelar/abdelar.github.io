@@ -55,3 +55,7 @@ section {
 	padding-top: 4em;
 	margin: auto;
 }
+
+.about {
+	background: rgb(95, 95, 95);
+}
