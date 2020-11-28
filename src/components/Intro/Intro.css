@@ -1,5 +1,6 @@
 .intro-bg {
 	background-image: url(../../assets/intro-bg.svg);
+	background-position: bottom right;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
