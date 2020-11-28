@@ -43,6 +43,7 @@
 .logo:hover,
 .logo:focus {
 	transform: scale(1.2);
+	outline: none;
 }
 
 .logo span {
@@ -146,6 +147,7 @@
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
+	outline: none;
 }
 
 .nav li a::after {
@@ -161,6 +163,7 @@
 	transition: transform 0.3s ease;
 	transform-origin: right;
 }
+
 .nav li a:hover::after,
 .nav li a:focus::after {
 	transform: scaleX(1);
