@@ -1,8 +1,15 @@
-.intro-bg {
+#intro {
 	background-image: url(../../assets/intro-bg.svg);
 	background-position: bottom right;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .introduction-illustration {
@@ -34,7 +41,9 @@
 }
 
 @media (min-width: 700px) {
-	#intro {
+	.intro {
+		flex-direction: row;
+		justify-content: space-between;
 		text-align: center;
 	}
 
@@ -53,26 +62,22 @@
 }
 
 @media (min-width: 1000px) {
-	.intro-bg {
+	#intro {
 		background-image: none;
 	}
 
-	#intro {
-		max-width: 90vw;
-		flex-direction: row;
-		align-items: center;
+	.intro {
 		text-align: start;
 	}
 
 	.introduction-illustration {
 		display: block;
-		width: 40%;
-		margin-left: auto;
 		object-fit: cover;
 		object-position: left top;
+		width: 40%;
 	}
 
 	.introduction-text {
-		max-width: 50%;
+		width: 50%;
 	}
 }

@@ -46,19 +46,9 @@ a {
 	color: var(--light01);
 }
 
-section {
-	display: flex;
+.contained {
 	width: 90%;
-	flex-direction: column;
-	justify-content: center;
 	min-height: 100vh;
 	padding-top: 4em;
 	margin: auto;
-}
-
-.about {
-	background: rgb(49, 49, 49);
-	display: grid;
-	align-items: center;
-	justify-content: center;
 }

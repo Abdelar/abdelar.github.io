@@ -8,6 +8,7 @@ import {
 
 import Nav from '../Nav/Nav';
 import Intro from '../Intro/Intro';
+import About from '../About/About';
 import './Main.css';
 
 library.add(faLaptopCode, faUser, faFolderOpen, faEnvelope);
@@ -19,12 +20,12 @@ export default function Main() {
 				<Nav />
 			</header>
 			<main>
-				<div className='intro-bg'>
-					<section id='intro'>
-						<Intro />
-					</section>
-				</div>
-				<section className='about'>about</section>
+				<section id='intro'>
+					<Intro />
+				</section>
+				<section id='about'>
+					<About />
+				</section>
 			</main>
 		</>
 	);

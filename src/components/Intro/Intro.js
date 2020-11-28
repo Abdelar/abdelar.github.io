@@ -3,7 +3,7 @@ import illustration from '../../assets/illustration.svg';
 
 export default function Intro() {
 	return (
-		<>
+		<div className='intro contained'>
 			<div className='introduction-text'>
 				<h1 className='greeting'>
 					<span>Hi, my name is</span> Abdellatif Elaroussi.
@@ -21,6 +21,6 @@ export default function Intro() {
 				className='introduction-illustration'
 				alt='introduction illustration'
 			/>
-		</>
+		</div>
 	);
 }
