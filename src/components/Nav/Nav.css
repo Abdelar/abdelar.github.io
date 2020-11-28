@@ -10,18 +10,14 @@
 	transition: border-bottom-left-radius 0.3s, height 0.3s ease;
 	height: 4em;
 	border-bottom-left-radius: 0;
-	box-shadow: 0 3px 10px var(--shadow-clr);
+	box-shadow: 0 0.15em 1em var(--shadow-clr);
 }
 
 .open {
 	height: 70%;
 	border-bottom-left-radius: 5em;
-	background-color: var(--yellow);
 }
 
-.open .logo {
-	background-image: url(../../assets/logo-inverted.svg);
-}
 .nav ul {
 	display: flex;
 	flex-direction: column;
@@ -148,7 +144,6 @@
 .nav li a {
 	position: relative;
 	font-weight: bold;
-	font-family: 'Roboto Mono', monospace;
 }
 
 .nav li a::after {
