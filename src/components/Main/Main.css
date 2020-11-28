@@ -57,5 +57,8 @@ section {
 }
 
 .about {
-	background: rgb(95, 95, 95);
+	background: rgb(49, 49, 49);
+	display: grid;
+	align-items: center;
+	justify-content: center;
 }
