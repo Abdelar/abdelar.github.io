@@ -112,7 +112,6 @@
 }
 
 .nav li {
-	font-size: 1.2rem;
 	transform: translateY(-200%);
 	opacity: 0;
 	transition: transform 0.3s ease, opacity 0.3s ease;
