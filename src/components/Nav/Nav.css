@@ -44,6 +44,7 @@
 .logo:focus {
 	transform: scale(1.2);
 	outline: none;
+	filter: invert(1);
 }
 
 .logo span {
