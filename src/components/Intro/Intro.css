@@ -32,6 +32,11 @@
 .brief-introduction {
 	margin: 0.8em 0;
 	letter-spacing: 0.05em;
+	color: var(--light02);
+}
+
+.detailed-introduction {
+	color: var(--light03);
 }
 
 @media (min-width: 700px) {

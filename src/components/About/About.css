@@ -13,6 +13,7 @@
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+	color: var(--light03);
 }
 
 .tech {
@@ -26,7 +27,7 @@
 	display: inline-block;
 	border-top: 0.3em solid transparent;
 	border-bottom: 0.3em solid transparent;
-	border-left: 0.3em solid white;
+	border-left: 0.3em solid var(--light01);
 	margin-right: 1em;
 }
 
