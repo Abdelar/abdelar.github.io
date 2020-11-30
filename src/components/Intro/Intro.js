@@ -15,6 +15,9 @@ export default function Intro() {
 					I am a web developer and I enjoy building everything from small
 					business sites to rich interactive web apps.
 				</p>
+				<a title='Learn More' className='learn-more' href='#about'>
+					Learn More
+				</a>
 			</div>
 			<img
 				src={illustration}

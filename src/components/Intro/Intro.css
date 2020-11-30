@@ -37,6 +37,26 @@
 
 .detailed-introduction {
 	color: var(--light03);
+	margin-bottom: 2em;
+}
+
+.learn-more {
+	color: var(--yellow);
+	background-color: inherit;
+	border: 0.1em solid var(--yellow);
+	border-radius: 2em;
+	display: inline-block;
+	padding: 0.6em 1em;
+	cursor: pointer;
+	letter-spacing: 0.08em;
+	transition: color 0.3s ease, background-color 0.3s ease;
+	outline: none;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+	color: var(--dark02);
+	background-color: var(--yellow);
 }
 
 @media (min-width: 700px) {
