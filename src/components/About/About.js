@@ -7,7 +7,7 @@ export default function About() {
 	return (
 		<div className='about contained'>
 			<div className='about-desc'>
-				<SectionTitle title='About' />
+				<SectionTitle title='About Me' />
 				<p className='about-text regular-text'>
 					Hello! I'm Abdellatif, a developer based in Morocco. I enjoy creating
 					things that live on the internet, whether that be websites,
