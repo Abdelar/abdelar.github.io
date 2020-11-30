@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { navLinks } from '../../config';
+import { logo, navLinks } from '../../config';
 
 import './Nav.css';
 
@@ -12,8 +12,8 @@ export default function Nav() {
 	};
 	return (
 		<nav className={`nav ${open ? 'open' : 'closed'}`}>
-			<a title='main page' href='/' className='logo'>
-				<span>Abdellatif Elaroussi</span>
+			<a title={logo.title} href={logo.href} className='logo'>
+				<span>{logo.text}</span>
 			</a>
 			<div
 				className={`nav-toggle ${open ? 'X' : 'sticks'}`}

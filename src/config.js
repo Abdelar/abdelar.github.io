@@ -1,3 +1,9 @@
+export const logo = {
+	title: 'Home',
+	href: '/home',
+	text: 'Abdellatif Elaroussi',
+};
+
 export const navLinks = [
 	{
 		title: 'About',
