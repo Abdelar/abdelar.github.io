@@ -1,0 +1,17 @@
+.section-title {
+	width: 100%;
+	margin-bottom: 1.5em;
+	display: flex;
+	align-items: center;
+}
+
+.section-title-text {
+	font-size: 2rem;
+	margin-right: 0.7em;
+}
+.section-title-line {
+	width: 50%;
+	background-color: rgb(85, 85, 85);
+	height: 1px;
+	flex-grow: 1;
+}

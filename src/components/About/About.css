@@ -1,5 +1,72 @@
 .about {
-	background: rgb(46, 46, 46);
-	display: grid;
-	place-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about-text {
+	margin-bottom: 1em;
+}
+
+.about-techs {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tech {
+	min-width: 50%;
+	margin-bottom: 1em;
+	display: flex;
+	align-items: center;
+}
+
+.arrow-right {
+	display: inline-block;
+	border-top: 0.3em solid transparent;
+	border-bottom: 0.3em solid transparent;
+	border-left: 0.3em solid white;
+	margin-right: 1em;
+}
+
+.portrait {
+	margin-top: 2em;
+	width: 100%;
+}
+
+.portrait img {
+	display: block;
+	margin: auto;
+	width: 50%;
+	max-width: 200px;
+	object-fit: cover;
+	object-position: center center;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.3em var(--dark02), 0 0 0 0.4em var(--yellow);
+}
+
+@media screen and (min-width: 900px) {
+	.about {
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 80%;
+	}
+	.about-desc {
+		width: 60%;
+	}
+	.portrait {
+		width: 30%;
+		margin: 0;
+	}
+	.portrait img {
+		display: block;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.about {
+		justify-content: space-around;
+	}
 }

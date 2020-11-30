@@ -11,7 +11,7 @@ export default function Intro() {
 				<h2 className='brief-introduction'>
 					I design &amp; build things for the web.
 				</h2>
-				<p className='detailed-introduction'>
+				<p className='detailed-introduction regular-text'>
 					I am a web developer and I enjoy building everything from small
 					business sites to rich interactive web apps.
 				</p>

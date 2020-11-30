@@ -18,9 +18,12 @@
 	--shadow-clr: #00000065;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 ::selection {
-	color: var(--dark02);
-	background-color: var(--yellow);
+	color: var(--yellow);
 }
 
 *,
@@ -51,4 +54,9 @@ a {
 	min-height: 100vh;
 	padding-top: 4em;
 	margin: auto;
+}
+
+.regular-text {
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
 }

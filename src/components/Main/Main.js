@@ -20,7 +20,7 @@ export default function Main() {
 				<Nav />
 			</header>
 			<main>
-				<section id='intro'>
+				<section id='home'>
 					<Intro />
 				</section>
 				<section id='about'>

@@ -1,6 +1,6 @@
 export const logo = {
-	title: 'Home',
-	href: '/home',
+	title: 'Abdellatif Elaroussi',
+	href: '#home',
 	text: 'Abdellatif Elaroussi',
 };
 
@@ -25,4 +25,13 @@ export const navLinks = [
 		href: '#contact',
 		icon: 'envelope',
 	},
+];
+
+export const technologies = [
+	'Javascript',
+	'Node.js',
+	'Firebase',
+	'MongoDB',
+	'React',
+	'Adobe XD',
 ];

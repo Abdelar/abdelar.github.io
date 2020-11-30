@@ -10,6 +10,7 @@ export default function Nav() {
 	const toggleNav = () => {
 		setOpen(!open);
 	};
+
 	return (
 		<nav className={`nav ${open ? 'open' : 'closed'}`}>
 			<a title={logo.title} href={logo.href} className='logo'>
@@ -23,7 +24,7 @@ export default function Nav() {
 			<ul className='nav-links'>
 				{navLinks.map(({ href, title, icon }) => (
 					<li key={href}>
-						<a title={title} href={href}>
+						<a title={title} href={href} onClick={() => setOpen(false)}>
 							<FontAwesomeIcon
 								className='link-icon'
 								icon={icon}
