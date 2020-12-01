@@ -21,6 +21,7 @@
 	border-radius: 0.2em;
 	box-shadow: 0 0.1em 1em var(--card-shadow-clr);
 	transition: transform 0.3s ease;
+	cursor: default;
 }
 
 .project:hover,
