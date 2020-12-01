@@ -13,6 +13,7 @@ import Nav from '../Nav/Nav';
 import Intro from '../Intro/Intro';
 import About from '../About/About';
 import Work from '../Work/Work';
+import Skills from '../Skills/Skills';
 import './Main.css';
 
 library.add(
@@ -39,6 +40,9 @@ export default function Main() {
 				</section>
 				<section id='work'>
 					<Work />
+				</section>
+				<section id='skills'>
+					<Skills />
 				</section>
 			</main>
 		</>

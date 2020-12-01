@@ -1,0 +1,8 @@
+#skills {
+	background-color: var(--dark03);
+}
+
+.skills {
+	display: flex;
+	align-items: center;
+}
