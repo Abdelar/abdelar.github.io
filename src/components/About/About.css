@@ -17,7 +17,7 @@
 }
 
 .tech {
-	min-width: 50%;
+	min-width: 100%;
 	margin-bottom: 1em;
 	display: flex;
 	align-items: center;
@@ -33,7 +33,7 @@
 }
 
 .portrait {
-	margin-top: 2em;
+	margin-top: 3em;
 	width: 100%;
 }
 
@@ -41,18 +41,30 @@
 	display: block;
 	margin: auto;
 	width: 50%;
-	max-width: 200px;
+	min-width: 100px;
 	object-fit: cover;
 	object-position: center center;
 	border-radius: 50%;
 	box-shadow: 0 0 0 0.3em var(--dark02), 0 0 0 0.4em var(--yellow);
 }
 
+@media screen and (min-width: 190px) {
+	.portrait img {
+		max-width: 200px;
+	}
+}
+
+@media screen and (min-width: 350px) {
+	.tech {
+		min-width: 50%;
+	}
+}
+
 @media screen and (min-width: 900px) {
 	.about {
 		flex-direction: row;
 		justify-content: space-between;
-		max-width: 80%;
+		max-width: 70%;
 	}
 	.about-desc {
 		width: 60%;
@@ -64,6 +76,7 @@
 	.portrait img {
 		display: block;
 		width: 100%;
+		margin-right: 0;
 	}
 }
 

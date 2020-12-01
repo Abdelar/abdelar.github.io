@@ -1,5 +1,6 @@
 import './Intro.css';
 import illustration from '../../assets/illustration.svg';
+import { learnMore } from '../../config';
 
 export default function Intro() {
 	return (
@@ -15,8 +16,8 @@ export default function Intro() {
 					I am a web developer and I enjoy building everything from small
 					business sites to rich interactive web apps.
 				</p>
-				<a title='Learn More' className='learn-more' href='#about'>
-					Learn More
+				<a title={learnMore.title} className='learn-more' href={learnMore.href}>
+					{learnMore.title}
 				</a>
 			</div>
 			<img
