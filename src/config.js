@@ -56,8 +56,9 @@ export const projects = [
 			{
 				href: 'https://github.com/Abdelar/iShare-frontend',
 				icon: ['fab', 'github'],
+				title: 'See the project on GitHub',
 			},
-			{ href: '/not-found', icon: 'external-link-square-alt' },
+			{ href: '/not-found', icon: 'external-link-square-alt', title: 'Demo' },
 		],
 	},
 	{
@@ -69,10 +70,12 @@ export const projects = [
 			{
 				href: 'https://github.com/Abdelar/morse-translate',
 				icon: ['fab', 'github'],
+				title: 'See the project on GitHub',
 			},
 			{
 				href: 'https://elaroussi.me/morse-translate',
 				icon: 'external-link-square-alt',
+				title: 'Demo',
 			},
 		],
 	},
@@ -83,10 +86,15 @@ export const projects = [
 			'Quickly and easily send REST, SOAP, and GraphQL requests directly within Postwoman.',
 		tools: ['React', 'Axios', 'Local Storage'],
 		links: [
-			{ href: 'https://github.com/Abdelar/postwoman', icon: ['fab', 'github'] },
+			{
+				href: 'https://github.com/Abdelar/postwoman',
+				icon: ['fab', 'github'],
+				title: 'See the project on GitHub',
+			},
 			{
 				href: 'https://elaroussi.me/postwoman/',
 				icon: 'external-link-square-alt',
+				title: 'Demo',
 			},
 		],
 	},

@@ -25,7 +25,7 @@ export default function About() {
 				</ul>
 			</div>
 			<div className='portrait'>
-				<img src={portrait} alt='portrait' />
+				<img src={portrait} alt='portrait' title='Portrait' loading='lazy' />
 			</div>
 		</div>
 	);

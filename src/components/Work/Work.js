@@ -15,6 +15,7 @@ export default function Work() {
 							className='project-avatar'
 							loading='lazy'
 							src={project.imgSrc}
+							title={project.name}
 							alt='img'
 						/>
 						<h4 className='project-name'>{project.name}</h4>
@@ -27,7 +28,11 @@ export default function Work() {
 						<ul className='project-links'>
 							{project.links.map(link => (
 								<li key={link.href}>
-									<a href={link.href} target='_blank' rel='noreferrer'>
+									<a
+										href={link.href}
+										target='_blank'
+										title={link.title}
+										rel='noreferrer'>
 										<FontAwesomeIcon icon={link.icon} />
 									</a>
 								</li>
