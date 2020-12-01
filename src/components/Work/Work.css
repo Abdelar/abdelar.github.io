@@ -59,6 +59,7 @@
 	color: var(--light03);
 	border-radius: 2em;
 	font-family: 'Roboto Mono', sans-serif;
+	font-size: 0.9rem;
 }
 
 .project-links {
