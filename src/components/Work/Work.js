@@ -16,7 +16,8 @@ export default function Work() {
 							loading='lazy'
 							src={project.imgSrc}
 							title={project.name}
-							alt='img'
+							alt='Project Avatar'
+							draggable={false}
 						/>
 						<h4 className='project-name'>{project.name}</h4>
 						<p className='project-desc'>{project.desc}</p>

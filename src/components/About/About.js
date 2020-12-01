@@ -25,7 +25,13 @@ export default function About() {
 				</ul>
 			</div>
 			<div className='portrait'>
-				<img src={portrait} alt='portrait' title='Portrait' loading='lazy' />
+				<img
+					src={portrait}
+					alt='Portrait'
+					title='Portrait'
+					loading='lazy'
+					draggable={false}
+				/>
 			</div>
 		</div>
 	);

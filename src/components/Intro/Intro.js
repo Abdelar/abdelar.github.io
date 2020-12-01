@@ -24,6 +24,7 @@ export default function Intro() {
 				src={illustration}
 				className='introduction-illustration'
 				alt='introduction illustration'
+				draggable={false}
 			/>
 		</div>
 	);
