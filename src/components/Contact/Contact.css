@@ -21,6 +21,7 @@ form {
 }
 
 label {
+	margin-top: 0.6em;
 	margin-bottom: 0.5em;
 	font-size: 1.2rem;
 	align-self: start;
@@ -59,7 +60,7 @@ textarea {
 button[type='submit'] {
 	background-color: var(--yellow);
 	border: 1px solid var(--yellow);
-	border-radius: 2em;
+	border-radius: 0.2em;
 	padding: 0.6em 2em;
 	color: var(--dark03);
 	outline: none;
