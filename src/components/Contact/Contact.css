@@ -5,4 +5,86 @@
 .contact {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 900px;
+}
+
+form {
+	width: 100%;
+}
+
+.form-element {
+	display: flex;
+	margin-bottom: 1.5em;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 0.5em;
+	font-size: 1.2rem;
+	align-self: start;
+	letter-spacing: 0.1em;
+	font-weight: 200;
+}
+
+input,
+textarea {
+	flex-grow: 1;
+	background-color: var(--light04);
+	border: none;
+	max-width: 100%;
+	color: var(--dark03);
+	padding: 0.6em;
+	border-radius: 0.2em;
+	font-family: 'Roboto Mono', monospace;
+	border: 1px solid var(--light04);
+	font-size: inherit;
+	outline: none;
+}
+
+input:focus,
+textarea:focus {
+	background-color: transparent;
+	border-color: var(--light04);
+	color: white;
+}
+
+textarea {
+	resize: vertical;
+	min-height: 8em;
+	max-height: 26em;
+}
+
+button[type='submit'] {
+	background-color: var(--yellow);
+	border: 1px solid var(--yellow);
+	border-radius: 2em;
+	padding: 0.6em 2em;
+	color: var(--dark03);
+	outline: none;
+	transition: color 0.3s ease, background-color 0.3s ease;
+	cursor: pointer;
+	font-size: inherit;
+}
+button[type='submit']::selection {
+	color: white;
+}
+
+button[type='submit']:hover,
+button[type='submit']:focus {
+	background-color: transparent;
+	color: var(--yellow);
+}
+
+@media screen and (min-width: 700px) {
+	.form-element {
+		flex-direction: row;
+	}
+	label {
+		width: 20%;
+	}
+	button[type='submit'] {
+		margin-left: 20%;
+	}
 }
