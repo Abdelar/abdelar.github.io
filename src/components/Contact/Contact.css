@@ -1,8 +1,8 @@
-#skills {
+#contact {
 	background-color: var(--dark03);
 }
 
-.skills {
+.contact {
 	display: flex;
 	align-items: center;
 }

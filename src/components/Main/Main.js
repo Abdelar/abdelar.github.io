@@ -1,10 +1,10 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
 	faFolderOpen,
-	faLaptopCode,
 	faUser,
 	faEnvelope,
 	faExternalLinkSquareAlt,
+	faFile,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -13,11 +13,11 @@ import Nav from '../Nav/Nav';
 import Intro from '../Intro/Intro';
 import About from '../About/About';
 import Work from '../Work/Work';
-import Skills from '../Skills/Skills';
+import Contact from '../Contact/Contact';
 import './Main.css';
 
 library.add(
-	faLaptopCode,
+	faFile,
 	faUser,
 	faFolderOpen,
 	faEnvelope,
@@ -41,8 +41,8 @@ export default function Main() {
 				<section id='work'>
 					<Work />
 				</section>
-				<section id='skills'>
-					<Skills />
+				<section id='contact'>
+					<Contact />
 				</section>
 			</main>
 		</>

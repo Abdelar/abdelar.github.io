@@ -20,14 +20,14 @@ export const navLinks = [
 		icon: 'folder-open',
 	},
 	{
-		title: 'Skills',
-		href: '#skills',
-		icon: 'laptop-code',
-	},
-	{
 		title: 'Contact',
 		href: '#contact',
 		icon: 'envelope',
+	},
+	{
+		title: 'Resume',
+		href: '#resume',
+		icon: 'file',
 	},
 ];
 
