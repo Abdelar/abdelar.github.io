@@ -67,6 +67,7 @@ button[type='submit'] {
 	font-family: inherit;
 	letter-spacing: 0.05em;
 	width: 8em;
+	margin-right: 1em;
 }
 
 button[type='submit']:disabled,
@@ -87,10 +88,10 @@ button[type='submit']:focus {
 
 .success,
 .error {
-	display: inline;
-	margin-left: 1em;
+	display: inline-block;
+	margin-top: 0.6em;
 	color: var(--light04);
-	word-wrap: none;
+	white-space: nowrap;
 }
 
 .error {
