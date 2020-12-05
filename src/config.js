@@ -99,3 +99,26 @@ export const projects = [
 		],
 	},
 ];
+
+export const socials = [
+	{
+		href: 'https://www.linkedin.com/in/elaroussi',
+		title: 'LinkedIn',
+		icon: ['fab', 'linkedin'],
+	},
+	{
+		href: 'https://github.com/Abdelar',
+		title: 'GitHub',
+		icon: ['fab', 'github'],
+	},
+	{
+		href: 'https://dribbble.com/Elaroussi',
+		title: 'Dribbble',
+		icon: ['fab', 'dribbble'],
+	},
+	{
+		href: 'https://codepen.io/elaroussi',
+		title: 'CodePen',
+		icon: ['fab', 'codepen'],
+	},
+];
