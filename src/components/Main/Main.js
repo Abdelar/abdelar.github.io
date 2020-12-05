@@ -5,6 +5,9 @@ import {
 	faEnvelope,
 	faExternalLinkSquareAlt,
 	faFile,
+	faSpinner,
+	faCheck,
+	faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -22,7 +25,10 @@ library.add(
 	faFolderOpen,
 	faEnvelope,
 	faGithub,
-	faExternalLinkSquareAlt
+	faExternalLinkSquareAlt,
+	faSpinner,
+	faCheck,
+	faTimes
 );
 
 export default function Main() {

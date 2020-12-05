@@ -31,23 +31,21 @@ label {
 input,
 textarea {
 	flex-grow: 1;
-	background-color: var(--light04);
+	background-color: transparent;
 	border: none;
 	max-width: 100%;
-	color: var(--dark03);
+	color: var(--light02);
 	padding: 0.6em;
+	border: 1px solid var(--light03);
 	border-radius: 0.2em;
 	font-family: 'Roboto Mono', monospace;
-	border: 1px solid var(--light04);
 	font-size: inherit;
 	outline: none;
 }
 
 input:focus,
 textarea:focus {
-	background-color: transparent;
-	border-color: var(--light04);
-	color: var(--light01);
+	border-color: var(--yellow);
 }
 
 textarea {
@@ -68,7 +66,15 @@ button[type='submit'] {
 	font-size: inherit;
 	font-family: inherit;
 	letter-spacing: 0.05em;
+	width: 8em;
 }
+
+button[type='submit']:disabled,
+button[type='submit']:hover:disabled {
+	filter: grayscale(1) brightness(0.9);
+	cursor: default;
+}
+
 button[type='submit']::selection {
 	color: var(--light01);
 }
@@ -77,6 +83,18 @@ button[type='submit']:hover,
 button[type='submit']:focus {
 	background-color: var(--yellow);
 	color: var(--dark03);
+}
+
+.success,
+.error {
+	display: inline;
+	margin-left: 1em;
+	color: var(--light04);
+	word-wrap: none;
+}
+
+.error {
+	color: tomato;
 }
 
 @media screen and (min-width: 700px) {

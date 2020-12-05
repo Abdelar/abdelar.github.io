@@ -1,13 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './Contact.css';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import { sendEmail } from '../../util/sendEmail';
+import { flipVar } from '../../util/flipVar';
 
 export default function Contact() {
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 	const [loading, setLoading] = useState(false);
-	const [error, setError] = useState(null);
+	const [success, setSuccess] = useState(false);
+	const [error, setError] = useState(false);
+
+	useEffect(() => {
+		return flipVar(success, setSuccess, 5000);
+	}, [success]);
+
+	useEffect(() => {
+		return flipVar(error, setError, 5000);
+	}, [error]);
 
 	const changed = e => {
 		const { name, value } = e.target;
@@ -23,9 +35,21 @@ export default function Contact() {
 		}
 	};
 
-	const submit = e => {
+	const submit = async e => {
 		e.preventDefault();
-		console.log(email, message);
+		setLoading(true);
+		try {
+			await sendEmail({ email, emailBody: message });
+			setSuccess(true);
+			setError(false);
+		} catch (err) {
+			setError(true);
+			setSuccess(false);
+		} finally {
+			setLoading(false);
+			setMessage('');
+			setEmail('');
+		}
 	};
 
 	return (
@@ -60,7 +84,19 @@ export default function Contact() {
 						onChange={changed}
 					/>
 				</div>
-				<button type='submit'>Send</button>
+				<button type='submit' disabled={loading}>
+					{loading ? <FontAwesomeIcon icon='spinner' pulse /> : 'Send'}
+				</button>
+				{error && (
+					<div className='error'>
+						Not Sent <FontAwesomeIcon icon='times' />
+					</div>
+				)}
+				{success && (
+					<div className='success'>
+						Sent <FontAwesomeIcon icon='check' />
+					</div>
+				)}
 			</form>
 		</div>
 	);
