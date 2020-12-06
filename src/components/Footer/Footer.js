@@ -5,18 +5,21 @@ import logo from '../../assets/logo.svg';
 import { socials } from '../../config';
 
 export default function Footer() {
+	const scrollToTop = () => {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	};
+
 	return (
 		<div className='footer'>
-			{/* <div className='identity'> */}
 			<img src={logo} alt='Identity' draggable={false} />
-			{/* </div> */}
 			<div className='copyright'>
 				Elaroussi.dev &copy; 2020
 				<br /> All rights reserved
 			</div>
 			<ul className='socials'>
 				{socials.map(social => (
-					<li className='social'>
+					<li className='social' key={social.title}>
 						<a
 							href={social.href}
 							title={social.title}
@@ -32,6 +35,9 @@ export default function Footer() {
 					</li>
 				))}
 			</ul>
+			<div className='top' onClick={scrollToTop}>
+				<FontAwesomeIcon icon='angle-up' size='2x' className='top-icon' />
+			</div>
 		</div>
 	);
 }

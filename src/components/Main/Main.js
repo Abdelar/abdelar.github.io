@@ -8,6 +8,7 @@ import {
 	faSpinner,
 	faCheck,
 	faTimes,
+	faAngleUp,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -37,7 +38,8 @@ library.add(
 	faTimes,
 	faDribbble,
 	faLinkedin,
-	faCodepen
+	faCodepen,
+	faAngleUp
 );
 
 export default function Main() {
