@@ -35,7 +35,11 @@ export default function Footer() {
 					</li>
 				))}
 			</ul>
-			<div className='top' onClick={scrollToTop}>
+			<div
+				className='top'
+				onClick={scrollToTop}
+				role='button'
+				title='Go to Top'>
 				<FontAwesomeIcon icon='angle-up' size='2x' className='top-icon' />
 			</div>
 		</div>
