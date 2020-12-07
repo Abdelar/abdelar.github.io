@@ -58,11 +58,11 @@
 }
 
 .top:hover {
-	background-color: var(--dark05);
+	background-color: var(--dark01);
 }
 
 .top-icon {
-	color: var(--dark04);
+	color: var(--dark05);
 	animation: move 1s linear infinite alternate;
 }
 
