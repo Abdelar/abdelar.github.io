@@ -5,7 +5,7 @@ import { logo, navLinks } from '../../config';
 import './Nav.css';
 
 export default function Nav() {
-	let positionY = useRef(0);
+	const positionY = useRef(0);
 	const [open, setOpen] = useState(false);
 	const [isHidden, setIsHidden] = useState(false);
 
