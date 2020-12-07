@@ -14,20 +14,16 @@ export default function Nav() {
 		setOpen(!open);
 	};
 
-	const toggleNav = useCallback(
-		throttle(() => {
-			setOpen(false);
-			window.scrollY > positionY.current
-				? setIsHidden(true)
-				: setIsHidden(false);
-			positionY.current = window.scrollY;
-		}, 300),
-		[positionY]
-	);
+	const toggleNav = useCallback(() => {
+		console.log('scroll');
+		setOpen(false);
+		window.scrollY > positionY.current ? setIsHidden(true) : setIsHidden(false);
+		positionY.current = window.scrollY;
+	}, [positionY]);
 
 	useEffect(() => {
-		window.addEventListener('scroll', toggleNav);
-		return () => window.removeEventListener('scroll', toggleNav);
+		window.addEventListener('scroll', throttle(toggleNav, 300));
+		return () => window.removeEventListener('scroll', throttle(toggleNav, 300));
 	}, [toggleNav]);
 
 	return (
