@@ -20,11 +20,6 @@
 	--card-shadow-clr: #00000045;
 }
 
-html {
-	scroll-behavior: smooth;
-	scroll-snap-type: y proximity;
-}
-
 ::selection {
 	color: var(--yellow);
 }
@@ -37,6 +32,10 @@ html {
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+	scroll-snap-type: y proximity;
+}
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -45,9 +44,11 @@ body {
 	background-color: var(--dark02);
 	color: var(--light01);
 	min-height: 100vh;
+	scroll-snap-type: y proximity; /*for safari users*/
 }
 
-section {
+section,
+footer {
 	scroll-snap-align: start;
 }
 
