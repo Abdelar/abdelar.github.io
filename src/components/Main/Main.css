@@ -98,5 +98,9 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:hover {
+	background-color: var(--light03);
+}
+
+::-webkit-scrollbar-thumb:active {
 	background-color: var(--yellow);
 }
