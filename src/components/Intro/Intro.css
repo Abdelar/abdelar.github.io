@@ -1,8 +1,10 @@
 #home {
-	background-image: url(../../assets/intro-bg.svg);
+	/* Remove this background image for now */
+
+	/* background-image: url(../../assets/intro-bg.svg);
 	background-position: bottom right;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 
 .intro {
