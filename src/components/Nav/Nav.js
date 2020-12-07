@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
+import { throttle } from 'lodash';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { logo, navLinks } from '../../config';
 
@@ -13,11 +14,16 @@ export default function Nav() {
 		setOpen(!open);
 	};
 
-	const toggleNav = useCallback(() => {
-		setOpen(false);
-		window.scrollY > positionY.current ? setIsHidden(true) : setIsHidden(false);
-		positionY.current = window.scrollY;
-	}, [positionY]);
+	const toggleNav = useCallback(
+		throttle(() => {
+			setOpen(false);
+			window.scrollY > positionY.current
+				? setIsHidden(true)
+				: setIsHidden(false);
+			positionY.current = window.scrollY;
+		}, 300),
+		[positionY]
+	);
 
 	useEffect(() => {
 		window.addEventListener('scroll', toggleNav);
