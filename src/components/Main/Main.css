@@ -22,6 +22,7 @@
 
 html {
 	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
 }
 
 ::selection {
@@ -44,6 +45,10 @@ body {
 	background-color: var(--dark02);
 	color: var(--light01);
 	min-height: 100vh;
+}
+
+section {
+	scroll-snap-align: start;
 }
 
 a {

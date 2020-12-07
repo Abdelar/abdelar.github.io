@@ -3,6 +3,7 @@
 	margin: auto;
 	padding: 2em 0;
 	text-align: center;
+	scroll-snap-align: start;
 }
 
 .socials {
