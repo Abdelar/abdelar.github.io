@@ -68,3 +68,15 @@ a {
 	letter-spacing: 0.1em;
 	line-height: 1.5em;
 }
+
+/* onScreen animations */
+
+section,
+footer {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.onScreen {
+	opacity: 1;
+}
