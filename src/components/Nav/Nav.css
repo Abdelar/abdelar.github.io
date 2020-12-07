@@ -8,10 +8,12 @@
 	position: fixed;
 	z-index: 1;
 	padding: 0 5vw;
-	transition: border-bottom-left-radius 0.3s, height 0.3s ease;
+	transition: border-bottom-left-radius 0.3s, height 0.3s ease,
+		transform 0.3s ease;
 	height: 4em;
 	border-bottom-left-radius: 0;
 	box-shadow: 0 0.15em 1em var(--shadow-clr);
+	transform: translateY(0);
 }
 
 .open {
@@ -173,6 +175,11 @@
 
 .link-icon {
 	margin-right: 0.2em;
+}
+
+.hideBar {
+	transform: translateY(-100%);
+	box-shadow: none;
 }
 
 @media (min-width: 700px) {
