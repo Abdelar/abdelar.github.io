@@ -15,11 +15,10 @@ export default function Nav() {
 	};
 
 	const toggleNav = useCallback(() => {
-		console.log('scroll');
 		setOpen(false);
 		window.scrollY > positionY.current ? setIsHidden(true) : setIsHidden(false);
 		positionY.current = window.scrollY;
-	}, [positionY]);
+	}, []);
 
 	useEffect(() => {
 		window.addEventListener('scroll', throttle(toggleNav, 300));
