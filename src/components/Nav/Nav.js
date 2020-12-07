@@ -1,11 +1,11 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { logo, navLinks } from '../../config';
 
 import './Nav.css';
 
 export default function Nav() {
-	let positionY = 0;
+	let positionY = useRef(0);
 	const [open, setOpen] = useState(false);
 	const [isHidden, setIsHidden] = useState(false);
 
@@ -15,8 +15,8 @@ export default function Nav() {
 
 	const toggleNav = useCallback(() => {
 		setOpen(false);
-		window.scrollY > positionY ? setIsHidden(true) : setIsHidden(false);
-		positionY = window.scrollY;
+		window.scrollY > positionY.current ? setIsHidden(true) : setIsHidden(false);
+		positionY.current = window.scrollY;
 	}, [positionY]);
 
 	useEffect(() => {
