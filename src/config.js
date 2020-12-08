@@ -1,6 +1,7 @@
 import C from './assets/C.svg';
 import M from './assets/M.svg';
 import P from './assets/P.svg';
+import resume from './assets/resume.pdf';
 
 export const logo = {
 	title: 'Abdellatif Elaroussi',
@@ -26,8 +27,9 @@ export const navLinks = [
 	},
 	{
 		title: 'Resume',
-		href: '#resume',
+		href: resume,
 		icon: 'file',
+		target: '_blank',
 	},
 ];
 

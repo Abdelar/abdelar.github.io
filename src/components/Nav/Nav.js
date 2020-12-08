@@ -39,9 +39,13 @@ export default function Nav() {
 				<span></span>
 			</div>
 			<ul className='nav-links'>
-				{navLinks.map(({ href, title, icon }) => (
+				{navLinks.map(({ href, title, icon, target }) => (
 					<li key={href}>
-						<a title={title} href={href} onClick={() => setOpen(false)}>
+						<a
+							title={title}
+							href={href}
+							target={target}
+							onClick={() => setOpen(false)}>
 							<FontAwesomeIcon
 								className='link-icon'
 								icon={icon}
