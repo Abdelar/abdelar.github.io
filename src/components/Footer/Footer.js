@@ -14,7 +14,7 @@ export default function Footer() {
 		<div className='footer'>
 			<img src={logo} alt='Identity' draggable={false} />
 			<div className='copyright'>
-				Elaroussi.dev &copy; 2020
+				abdell.tech &copy; 2020
 				<br /> All rights reserved
 			</div>
 			<ul className='socials'>

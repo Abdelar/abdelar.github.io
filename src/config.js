@@ -61,7 +61,7 @@ export const projects = [
 				title: 'See the project on GitHub',
 			},
 			{
-				href: 'https://elaroussi.me/confessio',
+				href: 'https://abdell.tech/confessio',
 				icon: 'external-link-square-alt',
 				title: 'Demo',
 			},
@@ -79,7 +79,7 @@ export const projects = [
 				title: 'See the project on GitHub',
 			},
 			{
-				href: 'https://elaroussi.me/morse-translate',
+				href: 'https://abdell.tech/morse-translate',
 				icon: 'external-link-square-alt',
 				title: 'Demo',
 			},
@@ -98,7 +98,7 @@ export const projects = [
 				title: 'See the project on GitHub',
 			},
 			{
-				href: 'https://elaroussi.me/postwoman/',
+				href: 'https://abdell.tech/postwoman/',
 				icon: 'external-link-square-alt',
 				title: 'Demo',
 			},
