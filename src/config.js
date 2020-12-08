@@ -60,7 +60,11 @@ export const projects = [
 				icon: ['fab', 'github'],
 				title: 'See the project on GitHub',
 			},
-			{ href: '/not-found', icon: 'external-link-square-alt', title: 'Demo' },
+			{
+				href: 'https://elaroussi.me/confessio',
+				icon: 'external-link-square-alt',
+				title: 'Demo',
+			},
 		],
 	},
 	{
