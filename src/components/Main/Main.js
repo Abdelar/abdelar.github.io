@@ -74,7 +74,7 @@ export default function Main() {
 					<Contact />
 				</section>
 			</main>
-			<footer ref={setRef6} className={visible6 ? 'onScreen' : ''}>
+			<footer id='footer' ref={setRef6} className={visible6 ? 'onScreen' : ''}>
 				<Footer />
 			</footer>
 		</>

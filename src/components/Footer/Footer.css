@@ -1,3 +1,7 @@
+#footer {
+	background-color: var(--dark01);
+}
+
 .footer {
 	width: 90%;
 	margin: auto;
@@ -58,7 +62,7 @@
 }
 
 .top:hover {
-	background-color: var(--dark01);
+	background-color: var(--dark02);
 }
 
 .top-icon {
