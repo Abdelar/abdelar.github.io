@@ -46,6 +46,7 @@ textarea {
 input:focus,
 textarea:focus {
 	border-color: var(--yellow);
+	background-color: var(--dark01);
 }
 
 textarea {
