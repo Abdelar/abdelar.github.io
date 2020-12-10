@@ -42,13 +42,13 @@ export default function Contact() {
 			await sendEmail({ email, emailBody: message });
 			setSuccess(true);
 			setError(false);
+			setMessage('');
+			setEmail('');
 		} catch (err) {
 			setError(true);
 			setSuccess(false);
 		} finally {
 			setLoading(false);
-			setMessage('');
-			setEmail('');
 		}
 	};
 
