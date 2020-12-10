@@ -15,11 +15,11 @@ export default function Contact() {
 
 	useEffect(() => {
 		return flipVar(success, setSuccess, 5000);
-	}, [success]);
+	}, [success, loading]);
 
 	useEffect(() => {
 		return flipVar(error, setError, 5000);
-	}, [error]);
+	}, [error, loading]);
 
 	const changed = e => {
 		const { name, value } = e.target;
