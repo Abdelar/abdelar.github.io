@@ -1,7 +1,7 @@
 import './About.css';
 import { technologies } from '../../config';
 import SectionTitle from '../SectionTitle/SectionTitle';
-import profile from '../../assets/profile.jpeg';
+import portrait from '../../assets/portrait.png';
 
 export default function About() {
 	return (
@@ -26,7 +26,7 @@ export default function About() {
 			</div>
 			<div className='portrait'>
 				<img
-					src={profile}
+					src={portrait}
 					alt='Portrait'
 					title='Portrait'
 					loading='lazy'

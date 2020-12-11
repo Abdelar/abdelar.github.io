@@ -46,6 +46,7 @@
 	object-position: center center;
 	border-radius: 50%;
 	box-shadow: 0 0 0 0.3em var(--dark02), 0 0 0 0.4em var(--yellow);
+	background-color: var(--dark03);
 }
 
 @media screen and (min-width: 190px) {
