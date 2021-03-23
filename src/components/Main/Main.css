@@ -104,3 +104,12 @@ footer {
 ::-webkit-scrollbar-thumb:active {
 	background-color: var(--yellow);
 }
+
+/* remove scroll snap on small devices*/
+
+@media screen and (max-width: 600px) {
+	html,
+	body {
+		scroll-snap-type: none;
+	}
+}
